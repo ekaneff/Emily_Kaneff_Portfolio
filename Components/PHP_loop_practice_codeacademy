@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Solo For Loop!</title>
+  </head>
+  <body>
+    <p>
+      <?php
+      // Write your for loop below!
+      for ($i = 0; $i < 110; $i = $i + 10) {
+          echo "<p>$i</p>";
+      }
+      ?>
+    </p>
+  </body>
+</html>
