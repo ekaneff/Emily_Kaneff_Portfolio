@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title></title>
+	</head>
+	<body>
+    <?php
+    $myName = "Emily"
+    switch($myName) {
+        case "Emily":
+            echo "Welcome back, Emily!";
+            break;
+        case "Spencer":
+        case "Dean":
+            echo "You are not Emily";
+            break;
+        case "Hailey":
+            echo "You are Emily's sister";
+            break;
+    }
+    ?>
+	</body>
+</html>
