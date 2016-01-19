@@ -24,15 +24,18 @@ public class Main {
         System.out.println("\tYellow");
         System.out.println("\tRed");
 
+
         userInput = scan.nextLine();
         userInput = userInput.toLowerCase();
+
+        while (!(userInput.equals("blue") || userInput.equals("green") || userInput.equals("yellow") || userInput.equals("red"))) {
+            System.out.println("Invalid entry. Choose again");
+            userInput = scan.nextLine().toLowerCase();
+        }
 
         numbers(userInput);
 
         fortunes(number);
-
-
-
 
     }
 
@@ -52,6 +55,11 @@ public class Main {
 
             number = scan.nextInt();
 
+            while (!(number == 1 || number == 4 || number == 7 || number == 8)) {
+                System.out.println("Invalid entry. Choose again");
+                number = scan.nextInt();
+            }
+
 
             if (number % 2 == 0) {
                 System.out.println("Choose another number:");
@@ -59,12 +67,22 @@ public class Main {
 
                 number = scan.nextInt();
 
+                while (!(number == 1 || number == 4 || number == 7 || number == 8)) {
+                    System.out.println("Invalid entry. Choose again");
+                    number = scan.nextInt();
+                }
+
             } else {
 
                 System.out.println("Choose another number:");
                 System.out.println(Arrays.toString(odd));
 
                 number = scan.nextInt();
+
+                while (!(number == 5 || number == 2 || number == 6 || number == 3)) {
+                    System.out.println("Invalid entry. Choose again");
+                    number = scan.nextInt();
+                }
             }
         }
 
@@ -76,11 +94,21 @@ public class Main {
 
                 number = scan.nextInt();
 
+                while (!(number == 5 || number == 2 || number == 6 || number == 3)) {
+                    System.out.println("Invalid entry. Choose again");
+                    number = scan.nextInt();
+                }
+
                 if (number % 2 == 0) {
                     System.out.println("Choose another number:");
                     System.out.println(Arrays.toString(even));
 
                     number = scan.nextInt();
+
+                    while (!(number == 1 || number == 4 || number == 7 || number == 8)) {
+                        System.out.println("Invalid entry. Choose again");
+                        number = scan.nextInt();
+                    }
 
                 } else {
 
@@ -88,6 +116,11 @@ public class Main {
                     System.out.println(Arrays.toString(odd));
 
                     number = scan.nextInt();
+
+                    while (!(number == 5 || number == 2 || number == 6 || number == 3)) {
+                        System.out.println("Invalid entry. Choose again");
+                        number = scan.nextInt();
+                    }
                 }
             }
 

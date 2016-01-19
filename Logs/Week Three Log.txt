@@ -1,0 +1,2 @@
+Tuesday  January 19, 2016
+	Today during class, I created my user story list for this week. I realized that this week I want to work on a big project that I can potentially work on throughout my degree as I learn new skills. I also successfully added a fail safe to my Cootie Catcher program so now the user can only input data that is listed as an option. For the rest of the week, I need to focus on learning Javascript and building my website. 
