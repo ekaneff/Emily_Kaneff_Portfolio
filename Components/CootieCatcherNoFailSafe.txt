@@ -1,0 +1,147 @@
+package com.company;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    static Scanner scan = new Scanner(System.in);
+    static int number;
+
+    public static void main(String[] args) {
+        //Fortune Teller Project
+
+        //variables
+        String userInput;
+
+
+        //initial display
+
+        System.out.println("Welcome to The Cootie Catcher");
+        System.out.println(" ");
+        System.out.println("Type a color to begin:");
+        System.out.println("\tBlue");
+        System.out.println("\tGreen");
+        System.out.println("\tYellow");
+        System.out.println("\tRed");
+
+
+        userInput = scan.nextLine();
+        userInput = userInput.toLowerCase();
+        
+
+        numbers(userInput);
+
+        fortunes(number);
+
+    }
+
+    public static int numbers(String _userInput) {
+
+
+        int [] even = {1, 4, 7, 8};
+        int[] odd = {5, 2, 6, 3};
+
+
+
+        if (_userInput.length() % 2 == 0) {
+
+
+            System.out.println("Now, choose a number to learn what your future holds:");
+            System.out.println(Arrays.toString(even));
+
+            number = scan.nextInt();
+            
+
+
+            if (number % 2 == 0) {
+                System.out.println("Choose another number:");
+                System.out.println(Arrays.toString(even));
+
+                number = scan.nextInt();
+                
+
+            } else {
+
+                System.out.println("Choose another number:");
+                System.out.println(Arrays.toString(odd));
+
+                number = scan.nextInt();
+                
+            }
+        }
+
+            if (_userInput.length() % 2 != 0) {
+
+
+                System.out.println("Now, choose a number to learn what your future holds.");
+                System.out.println(Arrays.toString(odd));
+
+                number = scan.nextInt();
+
+                if (number % 2 == 0) {
+                    System.out.println("Choose another number:");
+                    System.out.println(Arrays.toString(even));
+
+                    number = scan.nextInt();
+                    
+
+                } else {
+
+                    System.out.println("Choose another number:");
+                    System.out.println(Arrays.toString(odd));
+
+                    number = scan.nextInt();
+                    
+                }
+            }
+
+
+            return number;
+
+    }
+
+    public static void fortunes(int _number){
+
+        switch(_number) {
+            case 1:
+                System.out.println("You will get a job as a zookeeper who cleans the elephant poo.");
+                System.out.println("Thanks for using The Cootie Catcher! Feel free to play again!");
+                break;
+            case 2:
+                System.out.println("You will become an amazing artist! ");
+                System.out.println("Thanks for using The Cootie Catcher! Feel free to play again!");
+                break;
+            case 3:
+                System.out.println("You will be doomed to eat nothing but fortune cookies for the rest of your life. ");
+                System.out.println("Thanks for using The Cootie Catcher! Feel free to play again!");
+                break;
+            case 4:
+                System.out.println("Your problems will get bigger. Apologize for everything before its too late.");
+                System.out.println("Thanks for using The Cootie Catcher! Feel free to play again!");
+                break;
+            case 5:
+                System.out.println("Your ideas will lead you to a rich future! ");
+                System.out.println("Thanks for using The Cootie Catcher! Feel free to play again!");
+                break;
+            case 6:
+                System.out.println("You will be very smart one day! ");
+                System.out.println("Thanks for using The Cootie Catcher! Feel free to play again!");
+                break;
+            case 7:
+                System.out.println("You will grow a foot taller within this next year.");
+                System.out.println("Thanks for using The Cootie Catcher! Feel free to play again!");
+                break;
+            case 8:
+                System.out.println("Flattery will go far tonight.");
+                System.out.println("Thanks for using The Cootie Catcher! Feel free to play again!");
+                break;
+            default:
+                System.out.println("Sorry, there is no fortune in the cards for you today. Try again later.");
+
+        }
+
+
+
+    }
+
+}
