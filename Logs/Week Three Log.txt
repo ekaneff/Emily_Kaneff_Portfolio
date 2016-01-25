@@ -5,7 +5,7 @@ Wednesday January 20, 2016
 	I began the basic code for my “about me” website. I decided that I was going to leave out the Javascript element for this week, and focus more on learning the language. Then next week, I will improve on the side by adding the JavaScript element. 
 
 Thursday January 21, 2016
-	After dealing with a lot of personal situations this week, I decided that I am going to focus more on JavaScript next week. I put my focus into relearning CSS and HTML and made headway on the website. I want to spend more time next week improving it all still. 
+	After dealing with a lot of personal situations this week, I decided that I am going to focus more on JavaScript next week. I put my focus into relearning CSS and HTML and made headway on the website. I want to spend more time next week improving it all still. I also submitted the anchor points assignment after having done a stand up demo in class. 
 
 Friday January 22, 2016
 	I made progress in the career module course and checked out a few of the links under the development assignment on FSO. 
